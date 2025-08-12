@@ -156,7 +156,7 @@ class TextEditorApp extends HTMLElement {
       if (currentValue && !this.templates.includes(currentValue)) {
         const errorOption = document.createElement('option');
         errorOption.value = 'ERROR';
-        errorOption.textContent = 'ERROR: Template removed';
+        errorOption.textContent = 'ERROR';
         newSelect.appendChild(errorOption);
       } else {
         this.templates.forEach((template) => {
