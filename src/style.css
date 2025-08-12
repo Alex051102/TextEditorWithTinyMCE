@@ -1,0 +1,97 @@
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.editor-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.toolbar {
+  padding: 10px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+#editor {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#insert-component{
+  background-color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+.templates-panel {
+  flex: 1;
+  padding: 15px;
+  border-left: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.templates-list {
+  margin: 15px 0;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #ddd;
+}
+
+.template-item {
+  padding: 8px;
+  margin: 4px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.template-item:hover {
+  background: #eee;
+}
+
+.template-item.selected {
+  background: #e0e0e0;
+  
+}
+
+.template-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.template-actions button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#template-edit {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #ddd;
+  border: none;
+}
+
+.error-template {
+  color: red;
+  font-weight: bold;
+}
+#add-template{
+  background-color: rgb(155, 183, 155);
+  border: none;
+}
+#remove-template{
+  background-color: rgb(223, 170, 170);
+  border: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Editor with Dropdowns</title>
+<link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tiny.cloud/1/p4vla933ivtqndj16z9xu9dftlw6a2pcp4nwg1lucdsp6qss/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+  <text-editor-app>
+    <div class="app-container">
+      <div class="editor-container">
+        <div class="toolbar">
+          <button id="insert-component">Insert Dropdown</button>
+        </div>
+        <div id="editor"></div>
+      </div>
+      <div class="templates-panel">
+        <h3>Templates</h3>
+        <div class="templates-list" id="templates-list"></div>
+        <div class="template-actions">
+          <button id="add-template">+</button>
+          <button id="remove-template">−</button>
+        </div>
+        <div class="edit-template">
+          <h3>Edit templates</h3>
+          <input type="text" id="template-edit" placeholder="Edit template" />
+        </div>
+      </div>
+    </div>
+  </text-editor-app>
+</body>
+</html>
